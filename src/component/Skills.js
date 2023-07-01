@@ -5,13 +5,50 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
- // import Carousel from 'react-bootstrap/Carousel';
-// import { motion } from 'framer-motion';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+import Slider from "react-slick";
+//  import "slick-carousel/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+ 
 
 
 const Skills = () => {
 
- 
+    const settings = {
+    // margin: 30,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    loop:true,
+    autoplay: false,
+    // navText: ["Prev", "Next"],
+    // smartSpeed: 1000,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 2,
+        },
+        1000: {
+            items: 2,
+
+        }
+    },
+};
+
+  
+
     // const [selected, setSelected] = useState(0);
     // const crclProgress =  ;
     // const transition = { type: "spring", duration: 3 }
@@ -82,13 +119,10 @@ const Skills = () => {
                     <p>You can see my skills here</p>
                 </div> {/** end skills-top  */}
 
-                <div className="skills-btm">
+                
 
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro">
-                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-                    </svg> */}
-
-                    <Swiper
+                  
+                    {/* <Swiper
                         modules={[Navigation, Pagination]}
                         className="Swiperptns"
                         loopFillGroupWithBlank={true}
@@ -99,12 +133,39 @@ const Skills = () => {
                         loop={true}
                        >
                         
-                        <SwiperSlide>
-                                <div className="circleBigBox">
+                        <SwiperSlide> */}
+                    
+
+                    
+
+                 
+                <div className="skills-btm">
+
+                  <OwlCarousel className='owl-theme'
+                        // loop
+                        // autoPlay
+                        //  nav
+                        // items={2}
+                    
+                        {...settings}
+                        
+                    >
+                
+                        
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro"
+                     
+                    >
+                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                  </svg> */}
+                
+
+                {/* <Slider  {...settings} > */}
+                  
+                                <div className="circleBigBox" >
                                     <div className="outer">
                                         <div className="inner">
                                             <div id="number" className="number">
-                                                90%
+                                                95%
                                             </div> {/** end num */}
                                         </div> {/** end inn */}
 
@@ -122,16 +183,16 @@ const Skills = () => {
 
 
                                     </div> { /**end outer*/}
-                                    <text textAnchor="middle" className="skills-text-prog" > Web Devoloper</text>
+                                    <text textAnchor="middle" className="skills-text-prog" > HTML & CSS </text>
                                 </div> {/** end circleBigBox */}
-                        </SwiperSlide>
+                        {/* </SwiperSlide> */}
 
-                        <SwiperSlide>
+                        {/* <SwiperSlide> */}
                             <div className="circleBigBox">
                                 <div className="outer">
                                     <div className="inner">
                                         <div id="number" className="number">
-                                            70%
+                                            88%
                                         </div>
                                     </div>
 
@@ -149,16 +210,16 @@ const Skills = () => {
 
 
                                 </div> { /**end outer*/}
-                                <text textAnchor="middle" className="skills-text-prog" > Web Devoloper</text>
+                                <text textAnchor="middle" className="skills-text-prog" > React js </text>
                             </div>
-                        </SwiperSlide>
+                        {/* </SwiperSlide> */}
 
-                        <SwiperSlide>
+                        {/* <SwiperSlide> */}
                             <div className="circleBigBox">
                                 <div className="outer">
                                     <div className="inner">
                                         <div id="number" className="number">
-                                            87%
+                                            97%
                                         </div>
                                     </div>
 
@@ -175,19 +236,33 @@ const Skills = () => {
 
 
                                 </div> { /**end outer*/}
-                                <text textAnchor="middle" className="skills-text-prog" > Web Devoloper</text>
-                            </div>
-                        </SwiperSlide>
+                                <text textAnchor="middle" className="skills-text-prog" > Web Devolopment</text>
+                             </div>
+                    
+                        {/* </SwiperSlide> */}
 
-                    </Swiper>
+                    {/* </Swiper> */}
 
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro" >
-                        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                 </svg> */}
+                     
+                    
+                 
+                    {/* </Slider> */}
 
-                </div>  {/** end skills-btm */}
+                {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro" >
+                                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg> */}
+               
+                  </OwlCarousel>
+              </div>  {/** end skills-btm */}
+                    
+            
+                
 
+                
             </div>  {/** end skills-container */}
+
+            <div className="blurSkills1"  ></div>
+            <div className="blurSkills2" ></div>
 
         </div>
     )
