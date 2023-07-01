@@ -34,13 +34,13 @@ const Projects = () => {
                                 // defaultActiveKey="projsNav"
                                 className="mb-3 projsNav"
                                 >
-                                <Tab className="projslink" eventKey="ReactProject" title="React Project">
+                                <Tab className="projslink" eventKey="ReactProject" title="All Projects">
                                     <ReactProject/> 
                                 </Tab>
                                 <Tab className="projslink" eventKey="PasicProject" title="Pasic Project">
                                     <PasicProject/> 
                                 </Tab>
-                                <Tab className="projslink" eventKey="JsProjects" title="Js Projects">
+                                <Tab className="projslink" eventKey="JsProjects" title="Projects">
                                      <JsProjects/>
                                 </Tab>
                                

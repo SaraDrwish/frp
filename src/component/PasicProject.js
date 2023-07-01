@@ -5,7 +5,7 @@ import React from 'react'
 function PasicProject() {
   return (
     <div className='PasicProject' id='PasicProject'>
-      <h4> love HTML & CSS ProJects </h4>
+      <h4>   ProJects Coming as soooooooooooon  as possible . </h4>
     </div>
     
   )
