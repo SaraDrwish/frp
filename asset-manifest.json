@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SaraDrwish/frp/static/css/main.8e3e8616.css",
+    "main.js": "/SaraDrwish/frp/static/js/main.0abc3471.js",
+    "static/js/787.6669436e.chunk.js": "/SaraDrwish/frp/static/js/787.6669436e.chunk.js",
+    "static/media/star.png": "/SaraDrwish/frp/static/media/star.398cde1b1d8264289484.png",
+    "static/media/3.jpeg": "/SaraDrwish/frp/static/media/3.4e2f5bab62708c0fed00.jpeg",
+    "static/media/r1.jpg": "/SaraDrwish/frp/static/media/r1.a858e2b7f813e2c70fa1.jpg",
+    "static/media/r10.jpg": "/SaraDrwish/frp/static/media/r10.7e8e1811fc897042d92a.jpg",
+    "static/media/r6.jpg": "/SaraDrwish/frp/static/media/r6.44efc6160ae87d3d3054.jpg",
+    "index.html": "/SaraDrwish/frp/index.html",
+    "main.8e3e8616.css.map": "/SaraDrwish/frp/static/css/main.8e3e8616.css.map",
+    "main.0abc3471.js.map": "/SaraDrwish/frp/static/js/main.0abc3471.js.map",
+    "787.6669436e.chunk.js.map": "/SaraDrwish/frp/static/js/787.6669436e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e3e8616.css",
+    "static/js/main.0abc3471.js"
+  ]
+}
